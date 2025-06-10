@@ -1,0 +1,437 @@
+# Test info
+
+- Name: TC009_@sanity_Clinical Trial Landing Page_Validate the working of Search filter on clinical trial landing page in desktop view/iPad view, mobile view
+- Location: C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\tests\Clinical_Trial_Landing\Clinical_Trial_Landing.spec.ts:189:5
+
+# Error details
+
+```
+Error: Timed out 30000ms waiting for expect(locator).toBeVisible()
+
+Locator: getByText('There are no results matching your query.')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 30000ms
+  - waiting for getByText('There are no results matching your query.')
+
+    at C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\tests\Clinical_Trial_Landing\Clinical_Trial_Landing.spec.ts:242:72
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#main-content"
+- region "header":
+  - heading "Duke Cancer Institute" [level=1]
+- banner:
+  - link "Duke Cancer Institute Logo":
+    - /url: /
+    - img "Duke Cancer Institute Logo"
+  - navigation:
+    - list:
+      - listitem:
+        - link "DCI Blog":
+          - /url: /blogs
+      - listitem:
+        - link "Events":
+          - /url: /events
+      - listitem:
+        - link "DCI Members":
+          - /url: /dci-members
+      - listitem:
+        - link "Contact":
+          - /url: /contact-us
+      - listitem:
+        - link "Give ":
+          - /url: https://www.gifts.duke.edu/dci?technique_code=CCCWBDNN
+  - form "Search":
+    - searchbox "Search"
+    - button "Search Icon":
+      - img "Search Icon"
+  - navigation "main-menu":
+    - button "Cancer Types and Programs "
+    - button "Supportive Care "
+    - button "Research "
+    - button "Education and Training "
+    - button "About DCI "
+    - button "Get Involved"
+    - link "Make an Appointment ":
+      - /url: https://www.dukehealth.org/treatments/cancer
+- main:
+  - navigation "Breadcrumbs navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+          - text: 
+  - heading "Clinical Trials" [level=1]
+  - paragraph: Our experts across all cancer specialties participate in national clinical trials and perform the most advanced treatment methods using the latest technology available. As a result, we offer a broader selection of medical, surgical and minimally invasive options to more people, including those who are not considered candidates for treatment elsewhere. We offer unprecedented access to clinical trials.
+  - heading "Search" [level=2]
+  - textbox "Enter search term": zzzzzzzzzz
+  - button "clear results"
+  - button "Search"
+  - heading "Enrollment Status" [level=2]
+  - combobox "Filter by Enrollment Status"
+  - text: Filter by Enrollment Status
+  - button "Filter by Enrollment Status"
+  - heading "CATEGORIES" [level=2]
+  - combobox "Select Category"
+  - text: Select Category
+  - button "Select Category"
+  - heading "Age Group" [level=2]
+  - combobox "Filter by Age Group"
+  - text: Filter by Age Group
+  - button "Filter by Age Group"
+  - heading "VIEW BY" [level=2]
+  - combobox "VIEW BY": Date
+  - text: Date
+  - button "VIEW BY"
+- contentinfo:
+  - img "Duke Cancer Institute"
+  - link "Visit us on Facebook":
+    - /url: https://www.facebook.com/DukeCancerInstitute/
+    - img "facebook-icon icon":
+      - img "Facebook"
+  - link "Visit us on Instagram":
+    - /url: https://www.instagram.com/dukecancerinstitute
+    - img "instagram icon":
+      - img
+  - link "Visit us on X":
+    - /url: https://twitter.com/dukecancer
+    - img "x-icon icon":
+      - img
+  - link "Visit us on Youtube":
+    - /url: https://www.youtube.com/user/dukecancerinstitute
+    - img "youtube-icon icon":
+      - img "YouTube"
+  - link "Subscribe to our RSS Feed":
+    - /url: https://www.dukecancerinstitute.org/rss.xml
+    - img "rss-icon icon":
+      - img "RSS"
+  - navigation "Footer navigation":
+    - list:
+      - listitem: Cancer Types
+      - listitem:
+        - link "Primary Brain Cancer":
+          - /url: /center/preston-robert-tisch-brain-tumor-center
+      - listitem:
+        - link "Brain and Spine Metastasis":
+          - /url: /center/duke-center-brain-and-spine-metastasis
+      - listitem:
+        - link "Breast Cancer":
+          - /url: /cancer-types/breast-cancer
+      - listitem:
+        - link "Endocrine Neoplasia":
+          - /url: /cancer-types/endocrine-neoplasia
+      - listitem:
+        - link "Gastrointestinal Cancer":
+          - /url: /cancer-types/gastrointestinal-cancer
+      - listitem:
+        - link "Gynecologic Cancer":
+          - /url: /cancer-types/gynecologic-cancer
+      - listitem:
+        - link "Head and Neck Cancer":
+          - /url: /cancer-types/head-and-neck-cancer
+      - listitem:
+        - link "Hematologic Malignancies and Cellular Therapy":
+          - /url: /cancer-types/hematologic-malignancies-and-cellular-therapy
+      - listitem:
+        - link "Melanoma and Advanced Skin Cancers":
+          - /url: /cancer-types/melanoma-and-advanced-skin-cancers
+      - listitem:
+        - link "Pediatric Cancers":
+          - /url: /cancer-types/pediatric-cancers
+      - listitem:
+        - link "Prostate and Urologic Cancers":
+          - /url: /center/center-prostate-and-urologic-cancers
+      - listitem:
+        - link "Sarcoma":
+          - /url: /center/duke-sarcoma-center
+      - listitem:
+        - link "Thoracic Cancer":
+          - /url: /cancer-types/thoracic-cancer
+      - listitem: Cancer Therapies
+      - listitem:
+        - link "Immunotherapy":
+          - /url: /center/center-cancer-immunotherapy
+      - listitem:
+        - link "Molecular Tumor Board":
+          - /url: /center/molecular-tumor-board-precision-cancer-medicine
+      - listitem: Supportive Care
+      - listitem:
+        - link "Supportive Care and Survivorship Center":
+          - /url: /center/supportive-care-and-survivorship-center
+      - listitem: Research
+      - listitem:
+        - link "Cancer Registry":
+          - /url: /research/cancer-registry
+      - listitem:
+        - link "Clinical Trials":
+          - /url: /clinical-trials
+      - listitem:
+        - link "Research Programs":
+          - /url: /research-programs
+      - listitem:
+        - link "Shared Resources":
+          - /url: /research-programs/shared-resources
+      - listitem:
+        - link "Education and Training":
+          - /url: /cancer-research-training-and-education-coordination
+      - listitem:
+        - link "About DCI":
+          - /url: /about-dci
+      - listitem:
+        - link "DCI Members":
+          - /url: /about-dci/dci-members
+      - listitem:
+        - link "Nursing":
+          - /url: /AboutDCI/nursing
+      - listitem:
+        - link "Careers":
+          - /url: /about-dci?tab=Careers
+      - listitem:
+        - link "Community Outreach, Engagement, and Equity":
+          - /url: /community-outreach-engagement-and-equity
+      - listitem:
+        - link "Give To DCI":
+          - /url: /give-duke-cancer-institute
+      - listitem:
+        - link "Benefits and Special Events":
+          - /url: /give-duke-cancer-institute?tab=events
+      - listitem:
+        - link "Breakthroughs Magazine":
+          - /url: /give-duke-cancer-institute/breakthroughs
+  - navigation "Sub Footer navigation":
+    - list:
+      - listitem:
+        - link "Website Privacy Policy ":
+          - /url: https://www.dukehealth.org/privacy/website-privacy-policy
+      - listitem:
+        - link "Sitemap":
+          - /url: /sitemap.xml
+      - listitem:
+        - 'link "Leading with Heart: Serving Humanity "':
+          - /url: https://www.dukehealth.org/leading-with-heart-serving-humanity-pledge
+      - listitem:
+        - link "Notice of Nondiscrimination ":
+          - /url: https://www.dukehealth.org/notice-of-nondiscrimination
+      - listitem:
+        - link "Notice of Privacy Practices ":
+          - /url: https://www.dukehealth.org/privacy
+      - listitem:
+        - link "Terms and Conditions ":
+          - /url: https://www.dukehealth.org/terms-and-conditions-of-use
+      - listitem:
+        - link "Accessibility ":
+          - /url: https://accessibility.duke.edu/
+      - listitem: © DUKE CANCER INSTITUTE 2025
+```
+
+# Test source
+
+```ts
+  142 | test('TC007_@sanity_Clinical Trial Landing Page_Validate the UI of pagination on clinical trial landing page in desktop view/iPad view.', async ({ page, beforeHook, afterHook, isMobile, homepage, clinical_Trial_Landing_Page, loginpage, contentpage, archive_clinical_trial_page, testData }) => {
+  143 |     await homepage.navigateToClinicalTrialLandingPage();
+  144 |     await expect(page.url()).toContain("/clinical-trials");
+  145 |     if (!isMobile) {
+  146 |         await clinical_Trial_Landing_Page.validatePaginationUIDesktop();
+  147 |     } else {
+  148 |         await clinical_Trial_Landing_Page.validatePaginationMobileUI();
+  149 |     }
+  150 |
+  151 | })
+  152 |
+  153 |
+  154 |
+  155 | test('TC008_@sanity_Clinical Trial Landing Page_Validate the UI of Search filter on clinical trial landing page in desktop view/iPad view.', async ({ page, beforeHook, afterHook, isMobile, homepage, clinical_Trial_Landing_Page, loginpage, contentpage, archive_clinical_trial_page, testData }) => {
+  156 |     await homepage.navigateToClinicalTrialLandingPage();
+  157 |     await expect(page.url()).toContain("/clinical-trials");
+  158 |     // 1. Check h2 "SEARCH" text and styles
+  159 |     const styles = await clinical_Trial_Landing_Page.getSearchHeaderStyles();
+  160 |     expect(styles.text?.trim().toUpperCase()).toBe('SEARCH');
+  161 |     expect(styles.fontWeight).toBe('700');
+  162 |     expect(styles.textTransform.toLowerCase()).toBe('uppercase');
+  163 |     expect(styles.color).toBe('rgb(38, 38, 38)'); // #262626
+  164 |
+  165 |     // 2. Placeholder text
+  166 |     expect(await clinical_Trial_Landing_Page.getPlaceholderText()).toBe('Enter search term');
+  167 |     expect(await clinical_Trial_Landing_Page.isPlaceholderVisible()).toBe(true);
+  168 |
+  169 |     // 3. Search icon at right
+  170 |     expect(await clinical_Trial_Landing_Page.isSearchIconAtRight()).toBe(true);
+  171 |
+  172 |     // 4. Search icon hover color (Duke blue)
+  173 |     // const hoverColor = await clinical_Trial_Landing_Page.getSearchIconColorOnHover();
+  174 |     // expect(['rgb(21, 59, 107)', '#153b6b']).toContain(hoverColor);
+  175 |
+  176 |     expect(await clinical_Trial_Landing_Page.isCorrectSearchIconVisible()).toBe(true);
+  177 |
+  178 |
+  179 |     // 5. Placeholder disappears on typing
+  180 |     await clinical_Trial_Landing_Page.typeInSearchBox('test');
+  181 |     expect(await clinical_Trial_Landing_Page.isPlaceholderVisible()).toBe(false);
+  182 |
+  183 |     // 6. Clear icon appears
+  184 |     expect(await clinical_Trial_Landing_Page.isClearIconVisible()).toBe(true);
+  185 |
+  186 | })
+  187 |
+  188 |
+  189 | test('TC009_@sanity_Clinical Trial Landing Page_Validate the working of Search filter on clinical trial landing page in desktop view/iPad view, mobile view', async ({ page, beforeHook, afterHook, homepage, clinical_Trial_Landing_Page, testData, isMobile }) => {
+  190 |     // Navigate to Clinical Trial Landing Page
+  191 |     await homepage.navigateToClinicalTrialLandingPage();
+  192 |     await expect(page.url()).toContain("/clinical-trials");
+  193 |
+  194 |     // --- SEARCH WITH RIGHT KEYWORD ---
+  195 |     const validKeyword = testData.Clinical_trials_landing_page_search_term_keyword // e.g., "Immunotherapy"
+  196 |     await clinical_Trial_Landing_Page.typeInSearchBox(validKeyword);
+  197 |     await clinical_Trial_Landing_Page.searchFilter.click();
+  198 |
+  199 |     // Cross button appears
+  200 |     await expect(clinical_Trial_Landing_Page.clearSearchIcon).toBeVisible();
+  201 |
+  202 |     // Loading spinner appears
+  203 |     //await expect(clinical_Trial_Landing_Page.loadingSpinner).toBeVisible();
+  204 |     await clinical_Trial_Landing_Page.waitForResultsLoaded();
+  205 |
+  206 |     // Wait for results to load
+  207 |     await clinical_Trial_Landing_Page.waitForResultsLoaded();
+  208 |
+  209 |     // Results contain the keyword
+  210 |     const results = await clinical_Trial_Landing_Page.getSearchResults();
+  211 |     const count = await results.count();
+  212 |     expect(count).toBeGreaterThan(0);
+  213 |
+  214 |     for (let i=0; i < count ; i++) {
+  215 |         const text = await results.nth(i).textContent();
+  216 |         expect(text?.toLowerCase()).toContain(validKeyword.toLowerCase());
+  217 |     }
+  218 |
+  219 |     // Pagination appears if more than 12 results
+  220 |     if (count > 12) {
+  221 |         await expect(clinical_Trial_Landing_Page.pagination).toBeVisible();
+  222 |         // Optionally, check only 12 results per page
+  223 |         expect(await clinical_Trial_Landing_Page.getResultsCountOnPage()).toBe(12);
+  224 |     }
+  225 |
+  226 |     // --- SEARCH WITH INCORRECT KEYWORD ---
+  227 |     const invalidKeyword = "zzzzzzzzzz";
+  228 |     await clinical_Trial_Landing_Page.clearSearchBox();
+  229 |     await clinical_Trial_Landing_Page.typeInSearchBox(invalidKeyword);
+  230 |     await clinical_Trial_Landing_Page.searchFilter.click();
+  231 |
+  232 |     // Cross button appears
+  233 |     await expect(clinical_Trial_Landing_Page.clearSearchIcon).toBeVisible();
+  234 |
+  235 |     // Loading spinner appears
+  236 |     //await expect(clinical_Trial_Landing_Page.loadingSpinner).toBeVisible();
+  237 |
+  238 |     // Wait for results to load
+  239 |     await clinical_Trial_Landing_Page.waitForResultsLoaded();
+  240 |
+  241 |     // "No results" message appears
+> 242 |     await expect(await clinical_Trial_Landing_Page.noResultsMessage()).toBeVisible();
+      |                                                                        ^ Error: Timed out 30000ms waiting for expect(locator).toBeVisible()
+  243 |     await expect(await clinical_Trial_Landing_Page.noResultsMessage()).toHaveText("There are no results matching your query.");
+  244 |
+  245 |     // No results are shown
+  246 |    expect(await (await clinical_Trial_Landing_Page.getSearchResults()).count()).toBe(0);
+  247 |
+  248 |     // Pagination is hidden/disabled
+  249 |     await expect(clinical_Trial_Landing_Page.pagination).toBeHidden();
+  250 |
+  251 |     // Other filters are disabled
+  252 |     if (isMobile) {
+  253 |         await clinical_Trial_Landing_Page.filterResults_mobile.click();
+  254 |     }
+  255 |     expect(await clinical_Trial_Landing_Page.isDropdownDisabled('enrollmentStatus-dropdown')).toBe(true);
+  256 |     expect(await clinical_Trial_Landing_Page.isDropdownDisabled('category-dropdown')).toBe(true);
+  257 |     expect(await clinical_Trial_Landing_Page.isDropdownDisabled('agegroup-dropdown')).toBe(true);
+  258 |     expect(await clinical_Trial_Landing_Page.isDropdownDisabled('viewby-dropdown')).toBe(true);
+  259 |
+  260 | });
+  261 |
+  262 |
+  263 | test('TC010_@sanity_Clinical Trial Landing Page_Validate the UI of Enrollment status filter on clinical trial landing page in desktop view/iPad view/mobile view', async ({ page, beforeHook, afterHook, homepage, clinical_Trial_Landing_Page, testData, isMobile }) => {
+  264 |     // 1. Navigate to Clinical Trial Landing Page
+  265 |     await homepage.navigateToClinicalTrialLandingPage();
+  266 |     await expect(page.url()).toContain("/clinical-trials");
+  267 |
+  268 |     if (isMobile) {
+  269 |         await clinical_Trial_Landing_Page.filterResults_mobile.click();
+  270 |     }
+  271 |     // 2. Check h2 "ENROLLMENT STATUS" text(only for desktop) and styles 
+  272 |     if (!isMobile) {
+  273 |         const header = clinical_Trial_Landing_Page.enrollmentStatusHeader; // Locator for h2
+  274 |         await expect(header).toHaveText('Enrollment Status');
+  275 |         const headerStyles = await header.evaluate(el => ({
+  276 |             fontWeight: window.getComputedStyle(el).fontWeight,
+  277 |             textTransform: window.getComputedStyle(el).textTransform,
+  278 |             color: window.getComputedStyle(el).color
+  279 |         }));
+  280 |         expect(headerStyles.fontWeight).toBe('700');
+  281 |         expect(headerStyles.textTransform.toLowerCase()).toBe('uppercase');
+  282 |         expect(headerStyles.color).toBe('rgb(38, 38, 38)'); // #262626
+  283 |     }
+  284 |
+  285 |     //expect((await header.textContent()).toUpperCase()).toBe('ENROLLMENT STATUS')
+  286 |     // 3. Check placeholder for search filter
+  287 |     const dropdownInput = clinical_Trial_Landing_Page.enrollmentStatusDropdownInput;
+  288 |     const placeholder = await dropdownInput.textContent();
+  289 |     expect(placeholder?.toLowerCase()).toContain('filter by enrollment status');
+  290 |     // Check if placeholder is visible and not broken
+  291 |     await expect(dropdownInput).toBeVisible();
+  292 |     //const boundingBox = await dropdownInput.boundingBox();
+  293 |     //console.log("Bounding Box width is "+boundingBox);
+  294 |     //expect(boundingBox?.width).toBeGreaterThan(100); 
+  295 |     // 4. Expand dropdown and check options
+  296 |     await dropdownInput.click();
+  297 |     const option1 = clinical_Trial_Landing_Page.enrollmentStatusDropdownOption('Open for Enrollment');
+  298 |     const option2 = clinical_Trial_Landing_Page.enrollmentStatusDropdownOption('Open for Enrollment Soon');
+  299 |     await expect(option1).toBeVisible();
+  300 |     await expect(option2).toBeVisible();
+  301 |     const dropDownCase1 = await option1.evaluate(e1 => window.getComputedStyle(e1).textTransform);
+  302 |     const dropDownCase2 = await option2.evaluate(e1 => window.getComputedStyle(e1).textTransform);
+  303 |     expect(['capitalize', 'uppercase']).toContain(dropDownCase1);
+  304 |     expect(['capitalize', 'uppercase']).toContain(dropDownCase2)
+  305 |     // 5. Check hover state on dropdown option
+  306 |     await option1.hover();
+  307 |     const option1Bg = await option1.evaluate(el => window.getComputedStyle(el).color);
+  308 |     console.log("Hover color is " + option1Bg);
+  309 |     // You may want to check for a specific highlight color, e.g. Duke blue
+  310 |     expect(option1Bg).not.toBe('rgba(0, 0, 0, 0)'); // Should change on hover
+  311 |     // 6. Collapse dropdown by clicking outside
+  312 |     await page.click('body', { position: { x: 0, y: 0 } });
+  313 |     await expect(option1).toBeHidden();
+  314 |     await expect(option2).toBeHidden();
+  315 | });
+  316 |
+  317 |
+  318 |
+  319 |
+  320 | test('TC011_@sanity_Clinical Trial Landing Page_Validate the working of Enrollment Status filter on clinical trial landing page', async ({ page, beforeHook, afterHook, homepage, clinical_Trial_Landing_Page, testData, isMobile }) => {
+  321 |     // Helper to reset filters based on device
+  322 |     const resetFilters = async () => {
+  323 |         if (!isMobile) {
+  324 |             await clinical_Trial_Landing_Page.clickOnCloseButton_resetFilter();
+  325 |         } else {
+  326 |             await clinical_Trial_Landing_Page.filter_results_1.click();
+  327 |             await clinical_Trial_Landing_Page.clearfilters_mobile.click();
+  328 |         }
+  329 |     };
+  330 |
+  331 |     // Helper to open filter panel on mobile
+  332 |     const openMobileFilterPanel = async () => {
+  333 |         if (isMobile) {
+  334 |             await clinical_Trial_Landing_Page.filterResults_mobile.click();
+  335 |         }
+  336 |     };
+  337 |
+  338 |     // 1. Navigate to Clinical Trial Landing Page
+  339 |     await homepage.navigateToClinicalTrialLandingPage();
+  340 |     await expect(page.url()).toContain("/clinical-trials");
+  341 |     await openMobileFilterPanel();
+  342 |
+```

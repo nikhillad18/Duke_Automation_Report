@@ -1,0 +1,658 @@
+# Test info
+
+- Name: TC015_@sanity_Clinical Trial Landing Page_Validate the working of Age group dropdown filter on clinical trial landing page in desktop view/iPad view, mobile view
+- Location: C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\tests\Clinical_Trial_Landing\Clinical_Trial_Landing.spec.ts:499:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 220000ms exceeded.
+Call log:
+  - waiting for locator('//div[@id=\'agegroup-dropdown\']//following-sibling::span[contains(@class,\'p-dropdown-label\')]')
+    - locator resolved to <span tabindex="-1" data-pc-section="input" class="p-dropdown-label p-inputtext p-placeholder">Filter by Age Group</span>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="archive-sidebar-img"></div> from <section class="archive-hero">…</section> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    12 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="archive-sidebar-img"></div> from <section class="archive-hero">…</section> subtree intercepts pointer events
+  53 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <a href="/research/cancer-registry">Cancer Registry</a> from <footer class="footer">…</footer> subtree intercepts pointer events
+  27 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="footer-top">…</div> from <footer class="footer">…</footer> subtree intercepts pointer events
+  42 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="archive-results">…</div> intercepts pointer events
+  8 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <a href="/clinical-trials">Clinical Trials</a> from <footer class="footer">…</footer> subtree intercepts pointer events
+  11 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="footer-top">…</div> from <footer class="footer">…</footer> subtree intercepts pointer events
+  15 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="clinical-archive-wrapper">…</div> intercepts pointer events
+  31 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="footer-top">…</div> from <footer class="footer">…</footer> subtree intercepts pointer events
+  17 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="archive-sidebar-img"></div> from <section class="archive-hero">…</section> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="archive-results">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  8 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="clinical-archive-wrapper">…</div> intercepts pointer events
+  9 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="facets-widget-dropdown">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+    at Clinical_Trial_Landing_Page.validateAgeGroupFilter (C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\pages\Clinical_Trial_Landing_Page.ts:1215:42)
+    at C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\tests\Clinical_Trial_Landing\Clinical_Trial_Landing.spec.ts:510:39
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#main-content"
+- region "header":
+  - heading "Duke Cancer Institute" [level=1]
+- banner:
+  - link "Duke Cancer Institute Logo":
+    - /url: /
+    - img "Duke Cancer Institute Logo"
+  - navigation:
+    - list:
+      - listitem:
+        - link "DCI Blog":
+          - /url: /blogs
+      - listitem:
+        - link "Events":
+          - /url: /events
+      - listitem:
+        - link "DCI Members":
+          - /url: /dci-members
+      - listitem:
+        - link "Contact":
+          - /url: /contact-us
+      - listitem:
+        - link "Give ":
+          - /url: https://www.gifts.duke.edu/dci?technique_code=CCCWBDNN
+  - form "Search":
+    - searchbox "Search"
+    - button "Search Icon":
+      - img "Search Icon"
+  - navigation "main-menu":
+    - button "Cancer Types and Programs "
+    - button "Supportive Care "
+    - button "Research "
+    - button "Education and Training "
+    - button "About DCI "
+    - button "Get Involved"
+    - link "Make an Appointment ":
+      - /url: https://www.dukehealth.org/treatments/cancer
+- main:
+  - navigation "Breadcrumbs navigation":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+          - text: 
+  - heading "Clinical Trials" [level=1]
+  - paragraph: Our experts across all cancer specialties participate in national clinical trials and perform the most advanced treatment methods using the latest technology available. As a result, we offer a broader selection of medical, surgical and minimally invasive options to more people, including those who are not considered candidates for treatment elsewhere. We offer unprecedented access to clinical trials.
+  - heading "Search" [level=2]
+  - textbox "Enter search term"
+  - button "Search"
+  - heading "Enrollment Status" [level=2]
+  - combobox "Filter by Enrollment Status" [disabled]
+  - text: Filter by Enrollment Status
+  - button "Filter by Enrollment Status"
+  - heading "CATEGORIES" [level=2]
+  - combobox "Select Category" [disabled]
+  - text: Select Category
+  - button "Select Category"
+  - heading "Age Group" [level=2]
+  - combobox "Filter by Age Group" [disabled]
+  - text: Filter by Age Group
+  - button "Filter by Age Group"
+  - heading "VIEW BY" [level=2]
+  - combobox "VIEW BY" [disabled]: Date
+  - text: Date
+  - button "VIEW BY"
+- contentinfo:
+  - img "Duke Cancer Institute"
+  - link "Visit us on Facebook":
+    - /url: https://www.facebook.com/DukeCancerInstitute/
+    - img "facebook-icon icon":
+      - img "Facebook"
+  - link "Visit us on Instagram":
+    - /url: https://www.instagram.com/dukecancerinstitute
+    - img "instagram icon":
+      - img
+  - link "Visit us on X":
+    - /url: https://twitter.com/dukecancer
+    - img "x-icon icon":
+      - img
+  - link "Visit us on Youtube":
+    - /url: https://www.youtube.com/user/dukecancerinstitute
+    - img "youtube-icon icon":
+      - img "YouTube"
+  - link "Subscribe to our RSS Feed":
+    - /url: https://www.dukecancerinstitute.org/rss.xml
+    - img "rss-icon icon":
+      - img "RSS"
+  - navigation "Footer navigation":
+    - list:
+      - listitem: Cancer Types
+      - listitem:
+        - link "Primary Brain Cancer":
+          - /url: /center/preston-robert-tisch-brain-tumor-center
+      - listitem:
+        - link "Brain and Spine Metastasis":
+          - /url: /center/duke-center-brain-and-spine-metastasis
+      - listitem:
+        - link "Breast Cancer":
+          - /url: /cancer-types/breast-cancer
+      - listitem:
+        - link "Endocrine Neoplasia":
+          - /url: /cancer-types/endocrine-neoplasia
+      - listitem:
+        - link "Gastrointestinal Cancer":
+          - /url: /cancer-types/gastrointestinal-cancer
+      - listitem:
+        - link "Gynecologic Cancer":
+          - /url: /cancer-types/gynecologic-cancer
+      - listitem:
+        - link "Head and Neck Cancer":
+          - /url: /cancer-types/head-and-neck-cancer
+      - listitem:
+        - link "Hematologic Malignancies and Cellular Therapy":
+          - /url: /cancer-types/hematologic-malignancies-and-cellular-therapy
+      - listitem:
+        - link "Melanoma and Advanced Skin Cancers":
+          - /url: /cancer-types/melanoma-and-advanced-skin-cancers
+      - listitem:
+        - link "Pediatric Cancers":
+          - /url: /cancer-types/pediatric-cancers
+      - listitem:
+        - link "Prostate and Urologic Cancers":
+          - /url: /center/center-prostate-and-urologic-cancers
+      - listitem:
+        - link "Sarcoma":
+          - /url: /center/duke-sarcoma-center
+      - listitem:
+        - link "Thoracic Cancer":
+          - /url: /cancer-types/thoracic-cancer
+      - listitem: Cancer Therapies
+      - listitem:
+        - link "Immunotherapy":
+          - /url: /center/center-cancer-immunotherapy
+      - listitem:
+        - link "Molecular Tumor Board":
+          - /url: /center/molecular-tumor-board-precision-cancer-medicine
+      - listitem: Supportive Care
+      - listitem:
+        - link "Supportive Care and Survivorship Center":
+          - /url: /center/supportive-care-and-survivorship-center
+      - listitem: Research
+      - listitem:
+        - link "Cancer Registry":
+          - /url: /research/cancer-registry
+      - listitem:
+        - link "Clinical Trials":
+          - /url: /clinical-trials
+      - listitem:
+        - link "Research Programs":
+          - /url: /research-programs
+      - listitem:
+        - link "Shared Resources":
+          - /url: /research-programs/shared-resources
+      - listitem:
+        - link "Education and Training":
+          - /url: /cancer-research-training-and-education-coordination
+      - listitem:
+        - link "About DCI":
+          - /url: /about-dci
+      - listitem:
+        - link "DCI Members":
+          - /url: /about-dci/dci-members
+      - listitem:
+        - link "Nursing":
+          - /url: /AboutDCI/nursing
+      - listitem:
+        - link "Careers":
+          - /url: /about-dci?tab=Careers
+      - listitem:
+        - link "Community Outreach, Engagement, and Equity":
+          - /url: /community-outreach-engagement-and-equity
+      - listitem:
+        - link "Give To DCI":
+          - /url: /give-duke-cancer-institute
+      - listitem:
+        - link "Benefits and Special Events":
+          - /url: /give-duke-cancer-institute?tab=events
+      - listitem:
+        - link "Breakthroughs Magazine":
+          - /url: /give-duke-cancer-institute/breakthroughs
+  - navigation "Sub Footer navigation":
+    - list:
+      - listitem:
+        - link "Website Privacy Policy ":
+          - /url: https://www.dukehealth.org/privacy/website-privacy-policy
+      - listitem:
+        - link "Sitemap":
+          - /url: /sitemap.xml
+      - listitem:
+        - 'link "Leading with Heart: Serving Humanity "':
+          - /url: https://www.dukehealth.org/leading-with-heart-serving-humanity-pledge
+      - listitem:
+        - link "Notice of Nondiscrimination ":
+          - /url: https://www.dukehealth.org/notice-of-nondiscrimination
+      - listitem:
+        - link "Notice of Privacy Practices ":
+          - /url: https://www.dukehealth.org/privacy
+      - listitem:
+        - link "Terms and Conditions ":
+          - /url: https://www.dukehealth.org/terms-and-conditions-of-use
+      - listitem:
+        - link "Accessibility ":
+          - /url: https://accessibility.duke.edu/
+      - listitem: © DUKE CANCER INSTITUTE 2025
+```
+
+# Test source
+
+```ts
+  1115 |     }
+  1116 |
+  1117 |
+  1118 |
+  1119 |     /**
+  1120 |  * Iterates over clinical trial cards, opens each, performs validation, and returns.
+  1121 |  * @param results Array of Locators for the cards
+  1122 |  * @param browserName Name of the browser ('webkit', 'chromium', 'firefox')
+  1123 |  * @param validateDetailPage async function(page: Page, cardIndex: number): Promise<void>
+  1124 |  */
+  1125 |     async iterateAndValidateCards(results: Locator, browserName: string, validateDetailPage: (page: Page, cardIndex: number) => Promise<void>) {
+  1126 |         const count = await results.count();
+  1127 |         for (let i = 0; i < count; i++) {
+  1128 |             if (browserName === 'webkit') {
+  1129 |                 // WebKit: open in same tab, then go back
+  1130 |                 const cardLink = results.nth(i).locator('h3 a');
+  1131 |                 await Promise.all([
+  1132 |                     this.page.waitForNavigation({waitUntil:'domcontentloaded'}),
+  1133 |                     cardLink.click()
+  1134 |                 ]);
+  1135 |                 await validateDetailPage(this.page, i);
+  1136 |                 await Promise.all([
+  1137 |                     this.page.waitForNavigation({waitUntil:'domcontentloaded'}),
+  1138 |                     this.page.goBack()
+  1139 |                 ]);
+  1140 |                 await this.page.waitForLoadState('networkidle');
+  1141 |                 if (!this.page.isClosed()) {
+  1142 |                     await this.waitForResultsLoaded();
+  1143 |                 }
+  1144 |
+  1145 |             } else {
+  1146 |                 // Chromium/Firefox: open in new tab
+  1147 |                 const [detailPage] = await Promise.all([
+  1148 |                     this.page.context().waitForEvent('page'),
+  1149 |                     results.nth(i).locator('h3 a').click({ button: 'middle' })
+  1150 |                 ]);
+  1151 |                 await detailPage.waitForLoadState();
+  1152 |                 await validateDetailPage(detailPage, i);
+  1153 |                 await detailPage.close();
+  1154 |             }
+  1155 |         }
+  1156 |     }
+  1157 |
+  1158 |
+  1159 |
+  1160 |
+  1161 |     /**
+  1162 |  * Selects a category and validates that all fetched clinical trials are related to that category.
+  1163 |  * @param categoryName The category to search and select.
+  1164 |  */
+  1165 |     async validateCategoryFilter(categoryName: string) {
+  1166 |         // Open the category dropdown
+  1167 |         await this.categoryDropdownInput.click();
+  1168 |         // Search for the category
+  1169 |         await this.categoryDropdownSearchInput.fill(categoryName);
+  1170 |         // Select the category option
+  1171 |         const option = this.categoryDropdownOption(categoryName);
+  1172 |         await option.waitFor({ state: 'visible' });
+  1173 |         await option.click();
+  1174 |         // Wait for loading spinner if present
+  1175 |         if (this.loadingSpinner) {
+  1176 |             await this.loadingSpinner.waitFor({ state: 'visible' }).catch(() => { });
+  1177 |             await this.loadingSpinner.waitFor({ state: 'hidden' }).catch(() => { });
+  1178 |         }
+  1179 |         if (this.isMobile) {
+  1180 |             await this.applyfilter_mobile.click();
+  1181 |         }
+  1182 |         // Wait for results to load
+  1183 |         await this.waitForResultsLoaded();
+  1184 |         const filteredResults = await this.getSearchResults();
+  1185 |         const filteredCount = await filteredResults.count();
+  1186 |         expect(filteredCount).toBeGreaterThan(0);
+  1187 |
+  1188 |         if (this.getCountSummaryText) {
+  1189 |             const summaryText = await this.getCountSummaryText();
+  1190 |             expect(summaryText).toMatch(/^\d+-\d+ of \d+ Clinical Trials$/);
+  1191 |         }
+  1192 |
+  1193 |         // Get all clinical trial cards/results
+  1194 |         const results = await this.getSearchResults();
+  1195 |         const count = await results.count();
+  1196 |
+  1197 |         expect(count).toBeGreaterThan(0);
+  1198 |         // Validate each result contains the selected category (case-insensitive)
+  1199 |         const browserName = this.page.context().browser()?.browserType().name();
+  1200 |         await this.iterateAndValidateCards(results, browserName, async (detailPage, i) => {
+  1201 |             const pageText = await detailPage.textContent('body');
+  1202 |             //console.log("Page Text is " + pageText)
+  1203 |             expect(pageText?.toLowerCase()).toContain(categoryName.toLowerCase());
+  1204 |
+  1205 |         })
+  1206 |     }
+  1207 |
+  1208 |
+  1209 |     /**
+  1210 |      * Selects an age group and validates that all fetched clinical trials are related to that age group.
+  1211 |      * @param ageGroup The age group to select ("Adults" or "Both")
+  1212 |      */
+  1213 |     async validateAgeGroupFilter(ageGroup: string) {
+  1214 |         // Open the age group dropdown
+> 1215 |         await this.ageGroupDropdownInput.click();
+       |                                          ^ Error: locator.click: Test timeout of 220000ms exceeded.
+  1216 |
+  1217 |         // Select the age group option
+  1218 |         const option = this.ageGroupDropdownOption(ageGroup);
+  1219 |         await option.waitFor({ state: 'visible' });
+  1220 |         await option.click();
+  1221 |
+  1222 |         // Wait for loading spinner if present
+  1223 |         if (this.loadingSpinner) {
+  1224 |             await this.loadingSpinner.waitFor({ state: 'visible' }).catch(() => { });
+  1225 |             await this.loadingSpinner.waitFor({ state: 'hidden' }).catch(() => { });
+  1226 |         }
+  1227 |         if (this.isMobile) {
+  1228 |             await this.applyfilter_mobile.click();
+  1229 |         }
+  1230 |
+  1231 |         // Wait for results to load
+  1232 |         await this.waitForResultsLoaded();
+  1233 |         //await this.page.waitForTimeout(3000);
+  1234 |
+  1235 |         // Validate count summary format
+  1236 |         if (this.getCountSummaryText) {
+  1237 |             const summaryText = await this.getCountSummaryText();
+  1238 |             expect(summaryText).toMatch(/^\d+-\d+ of \d+ Clinical Trials$/);
+  1239 |         }
+  1240 |
+  1241 |         // Validate all results contain the selected age group
+  1242 |         // Get all clinical trial cards/results
+  1243 |         const filteredResults = await this.getSearchResults();
+  1244 |         const count = await filteredResults.count();
+  1245 |         expect(count).toBeGreaterThan(0);
+  1246 |         // Validate each result contains the selected Age Group (case-insensitive)
+  1247 |         const browserName = this.page.context().browser()?.browserType().name();
+  1248 |         const results = await this.getSearchResults();
+  1249 |         await this.iterateAndValidateCards(results, browserName, async (detailPage, i) => {
+  1250 |             const ageGroupValue = await detailPage.locator("//strong[contains(text(), 'Age Group')]/parent::div/parent::div/following-sibling::div[1]").textContent();
+  1251 |             expect(ageGroupValue?.trim().toLowerCase()).toBe(ageGroup.toLowerCase());
+  1252 |
+  1253 |         })
+  1254 |     }
+  1255 |
+  1256 |
+  1257 |     async validateCategoryFilterWWithoutIteration(categoryName: string) {
+  1258 |         // Open the category dropdown
+  1259 |         await this.categoryDropdownInput.click();
+  1260 |         // Search for the category
+  1261 |         await this.categoryDropdownSearchInput.fill(categoryName);
+  1262 |         // Select the category option
+  1263 |         const option = this.categoryDropdownOption(categoryName);
+  1264 |         await option.waitFor({ state: 'visible' });
+  1265 |         await option.click();
+  1266 |         // Wait for loading spinner if present
+  1267 |         if (this.loadingSpinner) {
+  1268 |             await this.loadingSpinner.waitFor({ state: 'visible' }).catch(() => { });
+  1269 |             await this.loadingSpinner.waitFor({ state: 'hidden' }).catch(() => { });
+  1270 |         }
+  1271 |         if (this.isMobile) {
+  1272 |             await this.applyfilter_mobile.click();
+  1273 |         }
+  1274 |         // Wait for results to load
+  1275 |         await this.waitForResultsLoaded();
+  1276 |         const filteredResults = await this.getSearchResults();
+  1277 |         const filteredCount = await filteredResults.count();
+  1278 |         expect(filteredCount).toBeGreaterThan(0);
+  1279 |
+  1280 |         if (this.getCountSummaryText) {
+  1281 |             const summaryText = await this.getCountSummaryText();
+  1282 |             expect(summaryText).toMatch(/^\d+-\d+ of \d+ Clinical Trials$/);
+  1283 |         }
+  1284 |
+  1285 |         // Get all clinical trial cards/results
+  1286 |         const results = await this.getSearchResults();
+  1287 |         const count = await results.count();
+  1288 |
+  1289 |         expect(count).toBeGreaterThan(0);
+  1290 |         // Validate each result contains the selected category (case-insensitive)
+  1291 |         const browserName = this.page.context().browser()?.browserType().name();
+  1292 |
+  1293 |         for (let i = 0; i < count; i++) {
+  1294 |             if (browserName === 'webkit') {
+  1295 |                 // WebKit: open in same tab, then go back
+  1296 |                 const cardLink = results.nth(i).locator('h3 a');
+  1297 |                 const href = await cardLink.getAttribute('href');
+  1298 |                 await Promise.all([
+  1299 |                     this.page.waitForNavigation({waitUntil:'domcontentloaded'}),
+  1300 |                     cardLink.click()
+  1301 |                 ]);
+  1302 |
+  1303 |                 
+  1304 |                 const statusValue1 = await this.page.textContent('body');
+  1305 |                 // Go back to the grid page
+  1306 |                 await Promise.all([
+  1307 |                     this.page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
+  1308 |                     this.page.goBack()
+  1309 |                 ]);
+  1310 |                 await this.page.waitForLoadState('networkidle');
+  1311 |                 await this.waitForResultsLoaded();
+  1312 |             } else {
+  1313 |                 // Chromium/Firefox: open in new tab
+  1314 |                 const [detailPage] = await Promise.all([
+  1315 |                     this.page.context().waitForEvent('page'),
+```
