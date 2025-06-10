@@ -1,0 +1,109 @@
+# Test info
+
+- Name: TC003_@sanity_Clinical Trial Landing Page_Validating the UI of filters present in Clinical Trial landing page
+- Location: C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\tests\Clinical_Trial_Landing\Clinical_Trial_Landing.spec.ts:42:5
+
+# Error details
+
+```
+Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://dci-uat.dkstest.dhe.duke.edu/
+Call log:
+  - navigating to "https://dci-uat.dkstest.dhe.duke.edu/", waiting until "load"
+
+    at Object.beforeHook (C:\Deloitte_Duke_Project\Duke_Cancer_Institute_Automation\hooks\hooks.ts:36:16)
+```
+
+# Page snapshot
+
+```yaml
+- heading "This site can’t be reached" [level=1]
+- paragraph: Check if there is a typo in dci-uat.dkstest.dhe.duke.edu.
+- paragraph
+- list:
+  - listitem:
+    - text: If spelling is correct,
+    - link "try running Windows Network Diagnostics":
+      - /url: javascript:diagnoseErrors()
+    - text: .
+- text: DNS_PROBE_FINISHED_NXDOMAIN
+- button "Reload"
+```
+
+# Test source
+
+```ts
+   1 | // test-setup.ts
+   2 | import { test as base } from '@playwright/test';
+   3 | import { Homepage } from '../pages/Homepage';
+   4 | import { Clinical_Trial_Landing_Page } from '../pages/Clinical_Trial_Landing_Page';
+   5 | //import {testData}  from "../playwright.config"
+   6 | import { LoginPage } from '../pages/LoginPage';
+   7 | import { ContentPage } from '../pages/ContentPage';
+   8 | import { Archive_Clinical_Trial_Page } from '../pages/Archive_Clinical_Trial_Page';
+   9 | import { setAuthoringDone, waitForAuthoringDone } from '../utils/authoringSync';
+  10 |
+  11 | import { DCI_Blog_Page } from '../pages/DCI_Blog_Page';
+  12 |
+  13 |
+  14 | type TestFixtures = {
+  15 |   beforeHook: void;
+  16 |   afterHook: void;
+  17 |   homepage: Homepage;
+  18 |   clinical_Trial_Landing_Page: Clinical_Trial_Landing_Page;
+  19 |   loginpage: LoginPage;
+  20 |   contentpage: ContentPage;
+  21 |   archive_clinical_trial_page: Archive_Clinical_Trial_Page;
+  22 |   testData: any;
+  23 |   dci_blog_page: DCI_Blog_Page;
+  24 |   setAuthoringDone: (flagName: string) => void;
+  25 |   waitForAuthoringDone: (flagName: string) => Promise<void>;
+  26 | };
+  27 |
+  28 | export const test = base.extend<TestFixtures>({
+  29 |   testData: async ({ }, use) => {
+  30 |     const ENV = process.env.ENV || 'local';
+  31 |     const testData = require(`../testData/${ENV}.json`);
+  32 |     await use(testData);
+  33 |   },
+  34 |
+  35 |   beforeHook: async ({ page, testData }, use) => {
+> 36 |     await page.goto(testData.baseURL);
+     |                ^ Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://dci-uat.dkstest.dhe.duke.edu/
+  37 |     //await page.goto("https://www.dukecancerinstitute.org/");
+  38 |     await page.waitForLoadState('networkidle');
+  39 |     await use();
+  40 |   },
+  41 |
+  42 |   afterHook: async ({ }, use) => {
+  43 |     await use();
+  44 |
+  45 |   },
+  46 |   homepage: async ({ page, isMobile }, use) => {
+  47 |     await use(new Homepage(page, isMobile));
+  48 |   },
+  49 |   clinical_Trial_Landing_Page: async ({ page, isMobile }, use) => {
+  50 |     await use(new Clinical_Trial_Landing_Page(page, isMobile));
+  51 |   },
+  52 |   loginpage: async ({ page, isMobile }, use) => {
+  53 |     await use(new LoginPage(page, isMobile));
+  54 |   },
+  55 |   contentpage: async ({ page, isMobile }, use) => {
+  56 |     await use(new ContentPage(page, isMobile));
+  57 |   },
+  58 |   archive_clinical_trial_page: async ({ page, isMobile }, use) => {
+  59 |     await use(new Archive_Clinical_Trial_Page(page, isMobile))
+  60 |   },
+  61 |
+  62 |   dci_blog_page: async({ page, isMobile}, use) => {
+  63 |      await use(new DCI_Blog_Page(page,isMobile))
+  64 |   },
+  65 |   setAuthoringDone: async ({}, use) => {
+  66 |     await use(setAuthoringDone);
+  67 |   },
+  68 |   waitForAuthoringDone: async ({}, use) => {
+  69 |     await use(waitForAuthoringDone);
+  70 |   }
+  71 |
+  72 |
+  73 | });
+```
